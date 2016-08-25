@@ -1,0 +1,97 @@
+
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="">
+<meta name="author" content="">
+
+<title>登录</title>
+
+<!-- Bootstrap core CSS -->
+<link href="../css/bootstrap-3.2.0.min.css" rel="stylesheet">
+
+
+<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+<!--[if lt IE 9]>
+      <script src="//cdn.bootcss.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="//cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+<style type="text/css">
+body {
+	padding-top: 40px;
+	padding-bottom: 40px;
+	background-color: #eee;
+}
+
+.form-signin {
+	max-width: 330px;
+	padding: 15px;
+	margin: 0 auto;
+	background-color: #dddddd;
+}
+
+.form-control {
+	border-bottom-left-radius: 0px;
+    border-top-left-radius: 0px;
+}
+
+/* .form-signin input[type="email"] { */
+/* 	border-bottom-right-radius: 0px; */
+/* 	border-bottom-left-radius: 0px; */
+/* } */
+
+.form-signin .form-control {
+	position: relative;
+	height: auto;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	padding: 10px;
+	font-size: 16px;
+	padding: 10px;
+}
+
+.btn-signin {
+	margin-top: 10px;
+	background-color: #66ccff;
+}
+.input-group-addon{
+	background-color: #ffffff;
+	color:#66ccff;
+	top:0;
+    border-bottom-right-radius: 0px;
+    border-top-right-radius: 0px;
+}
+</style>
+</head>
+
+<body>
+
+	<div class="container">
+		<form class="form-signin">
+			<h2 class="form-signin-heading">请登录</h2>
+			<div class="input-group">
+				<span class="input-group-addon glyphicon glyphicon-envelope"></span>
+				<label for="inputEmail" class="sr-only">邮箱</label> <input
+					type="email" id="inputEmail" class="form-control"
+					placeholder="请输入邮箱" required autofocus>
+			</div>
+			<div class="input-group">
+				<span class="input-group-addon glyphicon glyphicon-lock"></span> <label
+					for="inputPassword" class="sr-only">密码</label> <input
+					type="password" id="inputPassword" class="form-control"
+					placeholder="请输入密码" required>
+			</div>
+			<!-- 			<div class="checkbox"> -->
+			<!-- 				<label><input type="checkbox" value="remember-me">记住账号</label> -->
+			<!-- 			</div> -->
+			<button class="btn btn-lg btn-primary btn-block btn-signin"
+				type="submit" style="">登 录</button>
+		</form>
+
+	</div>
+</body>
+</html>

@@ -14,14 +14,14 @@
 <head>
 <title>垃圾后台</title>
 </head>
-<frameset rows="10%,*" cols="*" frameborder="no" border="0"
+<frameset rows="10%,*" cols="*" frameborder="0" border="0"
 	framespacing="0">
 	<frame src="head.jsp" name="head" scrolling="No" noresize="noresize">
-	<frameset cols="10%,*" rows="*" id="attachucp" frameborder="no"
-		border="0" framespacing="0">
-		<frame src="left.jsp" name="leftFrame" scrolling="auto"
+	<frameset cols="15%,*" rows="*" id="attachucp" frameborder="1"
+		border="1" framespacing="0">
+		<frame src="left.html" name="leftFrame" scrolling="auto"
 			noresize="noresize" id="leftFrame">
-		<frameset rows="5%,*" cols="*" frameborder="no" border="0" framespacing="0">
+		<frameset rows="5%,*" cols="*" frameborder="1" border="1" framespacing="0">
 		<frame src="righttop.jsp" scrolling="auto" name="rightTop" id="rightTop">
 			<frame src="welcome.html" scrolling="auto" name="right"
 				id="rightFrame">
