@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+  <title>summernote - bs3fa4</title>
+
+  <!-- include jquery -->
+  <script src="/js/jquery-2.1.1.min.js"></script>
+
+  <!-- include libraries BS3 -->
+  <link rel="stylesheet" href="/css/bootstrap-3.2.0.min.css" />
+  <script type="text/javascript" src="/js/bootstrap-3.2.0.min.js"></script>
+
+  <!-- include summernote -->
+  <link rel="stylesheet" href="/css/summernote.css">
+  <script type="text/javascript" src="/js/summernote.js"></script>
+
+  <script type="text/javascript">
+    $(document).ready(function() {
+      $('.summernote').summernote({
+        height: 300,
+        tabsize: 2
+      });
+    });
+  </script>
+</head>
+<body>
+<div class="container">
+  <h4>Lately library
+    <span class="label label-info">Bootstrap v3.3.5</span>
+  </h4>
+  <div class="summernote"></div>
+</div>
+</body>
+</html>
