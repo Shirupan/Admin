@@ -1,9 +1,7 @@
-<!DOCTYPE html>
+<%@ page contentType="text/html;charset=UTF-8" language="java" pageEncoding="UTF-8" %>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
-  <title>summernote - bs3fa4</title>
+  <title></title>
 
   <!-- include jquery -->
   <script src="/js/jquery-2.1.1.min.js"></script>
@@ -14,16 +12,9 @@
 
   <!-- include summernote -->
   <link rel="stylesheet" href="/css/summernote.css">
-  <script type="text/javascript" src="/js/summernote.js"></script>
-
-  <script type="text/javascript">
-    $(document).ready(function() {
-      $('.summernote').summernote({
-        height: 300,
-        tabsize: 2
-      });
-    });
-  </script>
+  <%
+      request.removeAttribute("id");
+  %>
 </head>
 <body>
 <div class="container">
@@ -33,4 +24,14 @@
   <div class="summernote"></div>
 </div>
 </body>
+<script type="text/javascript" src="/js/summernote.js"></script>
+
+<script type="text/javascript">
+  $(document).ready(function() {
+    $('.summernote').summernote({
+      height: 300,
+      tabsize: 2
+    });
+  });
+</script>
 </html>

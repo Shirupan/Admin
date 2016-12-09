@@ -12,19 +12,19 @@ import java.sql.SQLException;
 /**
  * Created by Maibenben on 2016/12/6.
  */
-public class DaoUser {
+public class UserDao {
     private Connection con = null;
     private PreparedStatement ps = null;
     private ResultSet rs = null;
-    private static DaoUser instance = null;
+    private static UserDao instance = null;
 
-    private DaoUser() {
+    private UserDao() {
 
     }
 
-    public synchronized static DaoUser getInstance() {
+    public synchronized static UserDao getInstance() {
         if (instance == null) {
-            instance = new DaoUser();
+            instance = new UserDao();
         }
         return instance;
     }
@@ -66,6 +66,6 @@ public class DaoUser {
         User user=new User();
         user.setEmail("pain");
         user.setPwd("123456");
-        System.out.println(DaoUser.getInstance().login(user).getEmail());
+        System.out.println(UserDao.getInstance().login(user).getEmail());
     }
 }

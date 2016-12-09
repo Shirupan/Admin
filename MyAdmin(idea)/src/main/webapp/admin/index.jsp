@@ -23,7 +23,7 @@
 			noresize="noresize" id="leftFrame">
 		<frameset rows="5%,*" cols="*" frameborder="1" border="1" framespacing="0">
 		<frame src="righttop.jsp" scrolling="auto" name="rightTop" id="rightTop">
-			<frame src="welcome.html" scrolling="auto" name="right"
+			<frame src="content.jsp" scrolling="auto" name="right"
 				id="rightFrame">
 		</frameset>
 	</frameset>

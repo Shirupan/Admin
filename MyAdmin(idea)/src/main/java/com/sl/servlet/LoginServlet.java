@@ -3,9 +3,10 @@ package com.sl.servlet;
 import com.alibaba.fastjson.JSON;
 import com.alibaba.fastjson.JSONObject;
 import com.sl.bean.User;
-import com.sl.dao.DaoUser;
+import com.sl.dao.UserDao;
 import com.sl.resp.BaseResp;
 import com.sl.resp.LoginResp;
+import com.sl.utils.Constant;
 
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
@@ -36,8 +37,13 @@ public class LoginServlet extends HttpServlet{
         String info=req.getParameter("info");
         System.out.println(info);
         User user= JSON.parseObject(info,User.class);
-        User result=DaoUser.getInstance().login(user);
+        User result= UserDao.getInstance().login(user);
         if(result!=null){
+            try {
+                Constant.getDate();
+            } catch (Exception e) {
+                e.printStackTrace();
+            }
             LoginResp rsp=new LoginResp();
             rsp.setStatus("success");
             rsp.setData(result);
