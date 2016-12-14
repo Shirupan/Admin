@@ -21,6 +21,7 @@
 </head>
 <body>
 <div class="note">
+    <a href="content-edit.jsp">添加新笔记</a>
 <table id="note" class="table table-striped table-bordered" cellspacing="0" width="100%">
     <thead>
     <tr>
@@ -32,13 +33,13 @@
     </thead>
     <tbody>
     <%
-        for (Content content: Constant.contents) {
+        for (Content content: Constant.contents.values()) {
             %>
     <tr>
         <td><%=content.getId()%></td>
         <td><%=content.getType()%></td>
         <td><%=content.getTitle()%></td>
-        <td><a href="content-edit.jsp&id=<%=content.getId()%>" target="_blank">编辑</a></td>
+        <td><a href="content-edit.jsp?id=<%=content.getId()%>" target="_blank">编辑</a></td>
     </tr>
     <%    }
     %>
